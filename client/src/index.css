@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+html {
+    scroll-behavior: smooth;
+}
+
+@keyframes phoneShake {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  15% {
+    transform: rotate(-15deg);
+  }
+  30% {
+    transform: rotate(15deg);
+  }
+  45% {
+    transform: rotate(-12deg);
+  }
+  60% {
+    transform: rotate(12deg);
+  }
+  75% {
+    transform: rotate(-6deg);
+  }
+}
+
+.animate-phone {
+  display: inline-block;
+  animation: phoneShake 1.2s ease-in-out infinite;
+  transform-origin: bottom center;
+}
