@@ -14,7 +14,7 @@ const app = express();
 
 app.use(
     cors({
-        origin: "https://narkh-nama.vercel.app",
+        origin: "https://narkh-nama-git-main-muhammad-awais2.vercel.app",
         credentials: true,
     })
 );
