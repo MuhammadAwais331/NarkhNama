@@ -14,10 +14,15 @@ const app = express();
 
 app.use(
     cors({
-        origin: "https://narkh-nama-git-main-muhammad-awais2.vercel.app",
+        origin: [
+            "http://localhost:5173",
+            "https://narkh-nama-git-main-muhammad-awais2.vercel.app",
+            "https://narkh-nama.vercel.app",
+        ],
         credentials: true,
     })
 );
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
@@ -28,7 +33,7 @@ app.use("/api/products", productRoutes);
 app.use("/api/announcements", announcementRoutes);
 app.use("/api/users", userRoutes);
 app.use("/api/settings", settingsRoutes);
-app.use("/api/prices",priceRoutes);
+app.use("/api/prices", priceRoutes);
 
 app.get("/", (req, res) => {
     res.json({
