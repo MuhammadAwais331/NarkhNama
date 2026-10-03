@@ -4,18 +4,18 @@ import { Autoplay, EffectFade } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-fade";
 
-import a from "../../assets/banners/a.jpg";
-import b from "../../assets/banners/b.jpg";
-import c from "../../assets/banners/c.jpg";
-import d from "../../assets/banners/d.jpg";
-import e from "../../assets/banners/e.jpg";
-import f from "../../assets/banners/f.jpg";
-import g from "../../assets/banners/g.jpg";
-import h from "../../assets/banners/h.jpg";
-import i from "../../assets/banners/i.jpg";
-import j from "../../assets/banners/j.jpg";
-import k from "../../assets/banners/k.jpg";
-import l from "../../assets/banners/l.jpg";
+import a from "../../banners/a.jpg";
+import b from "../../banners/b.jpg";
+import c from "../../banners/c.jpg";
+import d from "../../banners/d.jpg";
+import e from "../../banners/e.jpg";
+import f from "../../banners/f.jpg";
+import g from "../../banners/g.jpg";
+import h from "../../banners/h.jpg";
+import i from "../../banners/i.jpg";
+import j from "../../banners/j.jpg";
+import k from "../../banners/k.jpg";
+import l from "../../banners/l.jpg";
 
 const images = [a, b, c, d, e, f, g, h, i, j, k];
 

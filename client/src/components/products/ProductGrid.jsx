@@ -4,13 +4,11 @@ function ProductGrid({ products }) {
   if (products.length === 0) {
     return (
       <div className="rounded-2xl border border-dashed border-gray-300 bg-white py-16 text-center">
-        <h2 className="text-xl font-bold text-gray-800">
-          No Products Found
-        </h2>
+        <h2 className="text-xl font-bold text-gray-800">PRODUCTS LOADING...</h2>
 
-        <p className="mt-2 text-gray-500">
+        {/* <p className="mt-2 text-gray-500">
           No products are available in this category.
-        </p>
+        </p> */}
       </div>
     );
   }
@@ -26,10 +24,7 @@ function ProductGrid({ products }) {
       "
     >
       {products.map((product) => (
-        <ProductCard
-          key={product._id}
-          product={product}
-        />
+        <ProductCard key={product._id} product={product} />
       ))}
     </div>
   );

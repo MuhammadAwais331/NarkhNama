@@ -14,25 +14,19 @@ import api from "./api";
 
 // Get all users
 export const getUsers = async () => {
-    const { data } = await api.get("/users");
-    return data;
+  const { data } = await api.get("/users");
+  return data;
 };
 
 // Delete user
 export const deleteUser = async (id) => {
-    const { data } = await api.delete(
-        `/users/${id}`,
-        authConfig()
-    );
-    return data;
+  const { data } = await api.delete(`/users/${id}`, authConfig());
+  return data;
 };
 
 // Toggle Active / Inactive
 export const toggleUserStatus = async (id) => {
-    const { data } = await api.patch(
-        `/users/${id}/toggle-status`,
-        
-    );
+  const { data } = await api.patch(`/users/${id}/toggle-status`);
 
-    return data;
+  return data;
 };
